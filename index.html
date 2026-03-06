@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduChat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2>EduChat</h2>
+
+<button class="new-chat">+ New Chat</button>
+
+<div class="history">
+<p>Physics Notes</p>
+<p>Chemistry Help</p>
+<p>Biology Quiz</p>
+</div>
+
+</div>
+
+<!-- Chat Area -->
+
+<div class="chat-area">
+
+<div class="messages" id="messages"></div>
+
+<!-- Input Area -->
+
+<div class="input-area">
+
+<div class="chat-input">
+
+<button id="plusBtn">+</button>
+
+<input
+id="prompt"
+type="text"
+placeholder="Ask anything about your studies..."
+/>
+
+<button id="sendBtn">Send</button>
+
+</div>
+
+<div class="popup" id="popupMenu">
+
+<button id="uploadImage">Upload Image</button>
+
+<button id="voiceInput">Voice Input</button>
+
+<input
+type="file"
+id="imageUploader"
+accept="image/*"
+multiple
+hidden
+/>
+
+</div>
+
+<div id="imagePreview"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
